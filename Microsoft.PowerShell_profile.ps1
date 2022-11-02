@@ -138,6 +138,10 @@ if (Test-CommandExists nvim) {
     $EDITOR='vim'
 } elseif (Test-CommandExists vi) {
     $EDITOR='vi'
+} elseif (Test-CommandExists notepad++) {
+    $EDITOR='notepad++'
+} elseif (Test-CommandExists notepad) {
+    $EDITOR='notepad'
 }
 Set-Alias -Name vim -Value $EDITOR
 
